@@ -19,6 +19,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
     <title>Work Day Scheduler</title>
   </head>
 
@@ -30,9 +32,16 @@
     </header>
     <div class="container">
       <!-- Timeblocks go here -->
+      <div id="timeBlocks"></div>
+      <div class="row" id="rowTemplate">
+        <div class="col hour">Time</div>
+        <div class="col-10 event">Event</div>
+        <div class="col saveBtn"><i class="fas fa-save"></i>Save</div>
+      </div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="dayplanner.js"></script>
   </body>
 </html>
